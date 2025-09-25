@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>BirdsWeb</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive,  sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+
+<h1>BirdsWeb</h1>
+<h2>Dove i cocoriti possono navigare sul net!</h2>
+<p>Benvenuti su BirdsWeb, se vi siete imbattuti in questo sito web, allora hai proprio cliccato a caso come un vero cocorito curioso! Alla fine hai fatto bene. Però, fai che ti faccia presentare
+BirdsWeb! BirdsWeb è un sito web appositamente fatto per voi padroni di animali piumati e cocoriti, con tante GIF, Meme e curiosità
+sul vostro piccolo animaletto piumato! Preparatevi per una avventura emozionante!</p>
+
+<section>
+ <img src="melopsittacus.jpg">
+ <img src="crowanaburger.jpg">
+ <img src="borb.jpg">
+</section>
+
+<p><img src="budgie_banner.jpg"></p>
+
+<h2>Le pagine di BirdsWeb</h2>
+<h3>Qui comincia l'avventura</h3>
+
+<section>
+  <p><a href="parrot_page.html">Parrot Page</a></p>
+  <p><a href="timeline.html">BirdsWeb Timeline</a></p>
+  <p><a href="pokemon_page.html">Pokémon Page</a></p>
+  <p><a href="radio_cocorito.html">Radio Cocorito</a></p>
+  <p><a href="cocorito_builder.html">Cocorito Builder</a></p>
+</section>
+
+<h2>Compra tutto quello che vuoi!</h2>
+<h3>Hai bisogno di qualcosa? Vai al BirdsWeb Shop!</h3>
+
+<section>
+<p><a href="https://www.amazon.it/">BirdsWeb Shop</a></p>
+</section>
+
+<h2>✨ Curiosità sui cocoriti casuale!</h2>
+
+<div class="curiosity-box" id="curiosity">
+  <!-- Qui appare la curiosità -->
+</div>
+
+<script>
+  const curiosita = [
+    "I cocoriti possono imparare a dire fino a 100 parole!",
+    "I cocoriti dormono su una zampa sola.",
+    "Esiste una razza di cocorito chiamata 'arcobaleno'.",
+    "I cocoriti non possono mangiare cioccolato o avocado — sono velenosi per loro!",
+    "Un cocorito può vivere fino a 15 anni se ben curato.",
+    "I cocoriti hanno le piume impermeabili!",
+    "Alcuni cocoriti possono imitare suonerie e notifiche del telefono.",
+    "I cocoriti sono originari dell'Australia.",
+    "Il nome 'budgie' viene da 'budgerigar', il loro nome in inglese.",
+    "Sognano mentre dormono, proprio come gli umani!"
+  ];
+
+  const casuale = Math.floor(Math.random() * curiosita.length);
+  document.getElementById("curiosity").innerText = curiosita[casuale];
+</script>
+
+<h2>I meme del giorno</h2>
+<h3>Guardate le cose più buffe del web!</h3>
+
+<section>
+ <p><a href="https://www.youtube.com/shorts/mY6aj_6U-jQ">No Thoughts Just Birb</a></p>
+ <p><a href="https://www.youtube.com/shorts/CHquMEfP62E">Top 5 birds</a></p>
+ <p><a href="https://www.youtube.com/watch?v=FpCXlBWA6do">Birbs, borbs, and birbies—Internet Names for Birds</a></p>
+ <p><a href="https://www.youtube.com/shorts/Q4hWPLV1XFI">Bird Core 🪿</a></p>
+</section>
+
+<img src="parrot_obstacle.webp"> <img src="brush.gif">
+
+<h2>Contattaci!</h2>
+<p>Hai un messaggio per Mr. BirdsWeb? Scrivilo qui sotto:</p>
+
+<form action="https://formsubmit.co/leomtx.animations@gmail.com" method="POST">
+  <label for="email">La tua email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="message">Il tuo messaggio:</label><br>
+  <textarea id="message" name="message" rows="5" required></textarea><br><br> 
+  <!-- Protezione dallo spam -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Dopo l'invio va a una pagina di ringraziamento (facoltativo) -->
+  <input type="hidden" name="_next" value="thanks.html">
+
+  <button type="submit">Invia Messaggio</button>
+</form>
+
+<div id="footer-placeholder"></div>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const footerHTML = `
+        <footer>
+          <p><em>Powered by seeds and HTML tags – © 2025 BirdsWeb</em></p>
+          <p>
+            <img src="bestviewed_budgie.gif" alt="Best Viewed Budgie">
+            <img src="parrot_badge" alt="Parrot Badge">
+          </p>
+        </footer>
+      `;
+      document.getElementById('footer-placeholder').innerHTML = footerHTML;
+    });
+  </script>
+
+</body>
+</html>
+
